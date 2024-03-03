@@ -1,0 +1,30 @@
+.product {
+	display: grid;
+	grid-template-columns: 400px 500px 100px 100px;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-gradient);
+	width: fit-content;
+	margin: 0 auto
+}
+
+.product p {
+	border: 2px solid darkgray;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5px;
+}
+
+.product p:not(:last-child) {
+	border-right: none;
+}
+
+.id,
+.name,
+.price,
+.brand {
+	color: white;
+}

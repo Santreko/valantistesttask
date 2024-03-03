@@ -1,0 +1,59 @@
+.pagination {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.paginationButton {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	border: 2px solid darkgray;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.paginationButton:hover {
+	background: var(--main-gradient);
+}
+
+.currentPage {
+	background: var(--main-gradient);
+	cursor: default;
+	min-width: 60px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	border: 2px solid darkgray;
+	box-sizing: border-box;
+	color: white;
+	font-weight: bold;
+}
+
+.previousPageButton,
+.nextPageButton {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+}
+
+.previousPageButton:hover,
+.nextPageButton:hover {
+	background: var(--main-gradient);
+}
+
+.previousPageButton:hover svg path,
+.nextPageButton:hover svg path {
+	stroke: white;
+	fill: white;
+}
+
+.previousPageButton {
+	transform: rotate(180deg)
+}

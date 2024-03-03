@@ -1,0 +1,21 @@
+.filter {
+	min-height: 40px;
+	border: 2px solid darkgray;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	cursor: pointer;
+}
+
+.filter:hover {
+	background: var(--main-gradient);
+	color: white;
+}
+
+.active {
+	color: white;
+	background: var(--main-gradient);
+	cursor: default;
+}

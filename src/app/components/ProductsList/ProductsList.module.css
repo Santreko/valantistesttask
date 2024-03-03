@@ -1,0 +1,32 @@
+.productsList {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	padding: 0 40px;
+	row-gap: 10px;
+	margin: 0 auto;
+}
+
+.productsListHeader {
+	display: grid;
+	grid-template-columns: 400px 500px 100px 100px;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-gradient);
+	width: fit-content;
+	margin: 0 auto;
+	color: white;
+}
+
+.productsListHeader p {
+	border: 2px solid darkgray;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.productsListHeader p:not(:last-child) {
+	border-right: none;
+}
